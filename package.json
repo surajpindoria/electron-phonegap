@@ -5,7 +5,7 @@
     "main": "main.js",
     "scripts": {
         "start": "electron .",
-        "release": "electron-packager . --overwrite"
+        "release": "electron-packager . --overwrite --asar=true"
     },
     "repository": {
         "type": "git",

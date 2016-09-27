@@ -5,7 +5,7 @@
 let path = require('path');
 let spawn = require('child_process').spawn;
 
-let node = path.join(__dirname, 'bin', 'node.exe');
+let node = path.join(__dirname, '..', 'app.asar.unpacked', 'bin', 'node.exe');
 
 if (process.platform === 'darwin') {
     return;
@@ -13,7 +13,7 @@ if (process.platform === 'darwin') {
 
 // build phonegap command
 let args = [];
-args.push(path.join(__dirname, 'node_modules', 'phonegap', 'bin', 'phonegap.js'));
+args.push(path.join(__dirname, '..', 'app.asar.unpacked', 'node_modules', 'phonegap', 'bin', 'phonegap.js'));
 args.push('--version');
 
 // spawn child
